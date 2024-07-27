@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section aria-label="New Photos">
+      <div class="carousel" data-carousel>
+        <button class="carouselBtn Prev" data-carousel-button="prev">
+          &#10096;
+        </button>
+        <button class="carouselBtn Next" data-carousel-button="next">
+          &#10097;
+        </button>
+        <div class="carouselNav" data-carousel-nav>
+          <button class="carouselIndicator currentSlide"></button>
+          <button class="carouselIndicator"></button>
+          <button class="carouselIndicator"></button>
+        </div>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="./img/japan1.webp" alt="FF Image 1" />
+          </li>
+          <li class="slide">
+            <img src="./img/japan2.jpg" alt="FF Image 2" />
+          </li>
+          <li class="slide">
+            <img src="./img/japan3.webp" alt="FF Image 3" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
